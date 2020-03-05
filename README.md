@@ -1,20 +1,3 @@
-#Html5 Boiler Plate Readme ##Just a test
+#Html5 Boiler Plate Readme
 
-###This is the readme List Change for that branch
-
-1. Item 1
-2. Item 2
-3. Item 3
-
-
-Random Edit Text
-ljbkjbkbkb
-fghjk
-
-fdsaf
-fdsafsdfsadf
-xvxcvcvxv
-
-
-
-test
+##Just a Test
