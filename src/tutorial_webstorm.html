@@ -26,13 +26,9 @@
   <main id="mainArea">
     <div id = "content">
 
-      <h2>Repository Creation</h2>
+      <h2>WebStorm to AFS Setup</h2>
       <p>
-        To begin, either create a new remote repository on GitHub or find an existing one. In either case, copy the URL of the remote repository.
-        Next, startup a git bash terminal session (in WebStorm, click the terminal tab at the bottom) inside a local folder that’ll act as your local repository.
-        Finally, run the command “git clone REMOTE_URL,” replacing REMOTE_URL with the one you obtained earlier. If you’d like to instead just create a local repository,
-        skip the first step and run the command “git init” to initialize a local git repository. You’ll need to later “git remote add REMOTE_URL” a remote repository if you wish.
-      </p>
+        To setup AFS auto-upload, click the menu item Tools > Deployment > Configuration. Next, click the plus icon at the top left to add a new remote host and select SFTP. Enter in configuration information (Host, Username, Authentication, Root Path, and Web Server URL). Under the “Mappings” tab, you can also set more specific paths for deployment. After all that, all you have to do is select your remote host from the menu item Tools > Deployment > Automatic Upload and any saved changes will be automatically uploaded onto the remote server.</p>
 
       <h2>Making Commits in WebStorm</h2>
       <p>
