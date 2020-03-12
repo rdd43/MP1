@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="doc/F_layout_skel.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div id="wrapper">
+  <header id="top">
+
+    <div id="logo">
+      <h1>Logo / Name</h1>
+    </div>
+
+    <div id="mainMenu">
+      <menu>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 2</a></li>
+      </menu>
+    </div>
+
+  </header>
+  <main id="mainArea">
+    <div id = "content">
+
+      <h2>Repository Creation</h2>
+      <p>
+        To begin, either create a new remote repository on GitHub or find an existing one. In either case, copy the URL of the remote repository.
+        Next, startup a git bash terminal session (in WebStorm, click the terminal tab at the bottom) inside a local folder that’ll act as your local repository.
+        Finally, run the command “git clone REMOTE_URL,” replacing REMOTE_URL with the one you obtained earlier. If you’d like to instead just create a local repository,
+        skip the first step and run the command “git init” to initialize a local git repository. You’ll need to later “git remote add REMOTE_URL” a remote repository if you wish.
+      </p>
+
+      <h2>Making Commits in WebStorm</h2>
+      <p>
+        First, files must be added onto the “staging area” before file changes can be committed. To check whether any file changes aren’t part of the staging area,
+        run the command “git status” (this will of course disregard files in the gitignore file). In WebStorm, in order to add files and make a commit,
+        go the top menu > VCS > Git (here you’ll find other git command shortcuts). Clicking “Add” will add respective files onto the staging area; however,
+        “Commit File” will also give you the option to add any files to the staging area, followed by making the commit to the repository.
+        Note: commits, as well as other git commands, can be ran in the WebStorm terminal, which can be found as a tab in the bottom of a project
+      </p>
+
+      <h2>Making Branches</h2>
+      <p>
+        To make a new branch, run a git bash terminal session (in WebStorm, click the terminal tab at the bottom) within a local repository. Next,
+        run the command “git branch BRANCH_NAME” to create a new branch of BRANCH_NAME. Other useful commands include “git branch” to get a list of
+        branches in the local repository and “git branch -d BRANCH_NAME” to delete a branch in the local repository.
+      </p>
+
+      <h2>Merging Branches</h2>
+      <p>
+        To merge a branch, run a git bash terminal session (in WebStorm, click the terminal tab at the bottom) within a local repository.
+        Make sure you’re checked out onto the branch you want to merge INTO. Next, run the command “git merge BRANCH_NAME” to merge commits of BRANCH_NAME onto the currently checked out branch.
+        Note: sometimes there’ll be merge conflicts, conflicting code between the two branches that needs to be changed. These can be solved within WebStorm and/or brought up within the terminal itself.
+      </p>
+
+      <h2>Pull Requests and GitHub</h2>
+      <p>
+        First, have changes to the branch you plan to pull request to done on some remote repository on GitHub.
+        Next, click the “compare & pull request” button to send a pull request to the collaborators of the respective branch.
+        Make sure to follow any guidelines setup for the repository you’re sending a pull request to, particularly writing comments as required.
+        Also, make sure there are no merge conflicts (or at the least, very little). After creating said pull request,
+        a collaborator will review the request, make any changes if needed, and accept the request, effectively pulling your branch changes onto their branch.
+      </p>
+
+    </div>
+    <div id="sidebar">
+      <p>
+        <strong>Repository:</strong> A file location that stores current and previous versions of a folder.
+      </p>
+      <p>
+        <strong>Git Ignore:</strong> A file specifying which file(s) or folder(s), if any, within a repository that shouldn’t be tracked.
+      </p>
+      <p>
+        <strong>Clone:</strong> A git method of copying and pointing to an existing repository, creating a new identical repository.</p>
+      <p>
+        <strong>Fork:</strong> A git method of copying a remote repository, creating a new identical remote repository.</p>
+      <p>
+        <strong>Branch:</strong> A git method that separates repository development, creating a new timeline of versions that can be switched to and from.</p>
+      <p>
+        <strong>Commit:</strong> A git method that records the current state of a repository, appending a new version onto the end of the current repository’s branch’s timeline.</p>
+      <p>
+        <strong>Merge:</strong> A git method to combine development of one branch onto another branch.</p>
+      <p>
+        <strong>Checkout:</strong> A git method to switch onto a different branch within a local repository.</p>
+      <p>
+        <strong>Push:</strong> A git method to upload local repository content and overwrite a remote repository.</p>
+      <p>
+        <strong>Pull:</strong> A git method to retrieve remote repository and overwrite a local repository.</p>
+      <p>
+        <strong>Remote Add/Remove/Show:</strong> A set of git commands pertaining to establishing or showing a corresponding remote repository to a local repository. “Remote Add” adds a new remote link; “Remote Remove” removes an existing remote link; and “Remote Show” shows all current remote links.</p>
+      <p>
+        <strong>Status:</strong> A git command to display the state of the current repository, including files set for staging.</p>
+      <p>
+        <strong>Master Branch:</strong> The default and usually fundamental branch of a repository.</p>
+    </div>
+  </main>
+  <footer>
+    <small>&copy; Copyright 2020, Non-Existing</small>
+  </footer>
+</div>
+</body>
+</html>
