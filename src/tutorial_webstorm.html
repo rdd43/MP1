@@ -22,11 +22,20 @@
       </menu>
     </div>
 
+    <div id="subMenu">
+      <menu>
+        <li><a href="#webstorm_afs">WebStorm to AFS Setup</a></li>
+        <li><a href="#webstorm_files">WebStorm Local File Creation</a></li>
+        <li><a href="#afs_files">AFS File Creation</a></li>
+        <li><a href="#html5_boilerplate">HTML5 Boilerplate and Deployment</a></li>
+        <li><a href="#afs_terminal">AFS and Terminal</a></li>
+      </menu>
+    </div>
   </header>
   <main id="mainArea">
     <div id="content">
 
-      <h2>WebStorm to AFS Setup</h2>
+      <h2 id="webstorm_afs">WebStorm to AFS Setup</h2>
       <p>
         To setup AFS auto-upload, click the menu item Tools > Deployment > Configuration. Next, click the plus icon at
         the top left to add a new remote host and select SFTP. Enter in configuration information (Host, Username,
@@ -34,7 +43,7 @@
         for deployment. After all that, all you have to do is select your remote host from the menu item Tools >
         Deployment > Automatic Upload and any saved changes will be automatically uploaded onto the remote server.</p>
 
-      <h2>WebStorm Local File Creation</h2>
+      <h2 id="webstorm_files">WebStorm Local File Creation</h2>
       <p>
         To create files and folders in WebStorm, first you’ll need a project (this can be created by the menu item > New
         > Project File). Right click the project folder or any folder within the project folder and click New, from
@@ -43,7 +52,7 @@
 
       </p>
 
-      <h2>AFS File Creation</h2>
+      <h2 id="afs_files">AFS File Creation</h2>
       <p>
         To create a file via AFS, login and navigate to the respective folder using the terminal (refer to AFS and
         Terminal below). Now all you have to do is run the command “mkdir DIRECTORY_NAME” replacing DIRECTORY_NAME with
@@ -52,7 +61,7 @@
 
       </p>
 
-      <h2>HTML5 Boilerplate and Deployment</h2>
+      <h2 id="html5_boilerplate">HTML5 Boilerplate and Deployment</h2>
       <p>
         First, download or clone a copy of the HTML5 Boilerplate. Also, make sure to have an installation of node.js on
         your desktop. Next, run WebStorn with the copy of the HTML5 Boilerplate as the project folder. Then, run a
@@ -65,7 +74,7 @@
 
       </p>
 
-      <h2>AFS and Terminal</h2>
+      <h2 id="afs_terminal">AFS and Terminal</h2>
       <p>
         How to access site via afs and terminal
         Directory structure to website
