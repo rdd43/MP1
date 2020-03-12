@@ -16,16 +16,25 @@
 
     <div id="mainMenu">
       <menu>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Webstorm and AFS</a></li>
+        <li><a href="#">Github</a></li>
       </menu>
     </div>
-
+    <div id="subMenu">
+      <menu>
+        <li><a href="#repository">Repository Creation</a></li>
+        <li><a href="#commits">Commits in WebStorm</a></li>
+        <li><a href="#making_branch">Making Branches</a></li>
+        <li><a href="#merging_branch">Merging Branches</a></li>
+        <li><a href="#pull_requests">Pull Requests</a></li>
+      </menu>
+    </div>
   </header>
   <main id="mainArea">
     <div id = "content">
 
-      <h2>Repository Creation</h2>
+      <h2 id="repository">Repository Creation</h2>
       <p>
         To begin, either create a new remote repository on GitHub or find an existing one. In either case, copy the URL of the remote repository.
         Next, startup a git bash terminal session (in WebStorm, click the terminal tab at the bottom) inside a local folder that’ll act as your local repository.
@@ -33,7 +42,7 @@
         skip the first step and run the command “git init” to initialize a local git repository. You’ll need to later “git remote add REMOTE_URL” a remote repository if you wish.
       </p>
 
-      <h2>Making Commits in WebStorm</h2>
+      <h2 id="commits">Commits in WebStorm</h2>
       <p>
         First, files must be added onto the “staging area” before file changes can be committed. To check whether any file changes aren’t part of the staging area,
         run the command “git status” (this will of course disregard files in the gitignore file). In WebStorm, in order to add files and make a commit,
@@ -42,21 +51,21 @@
         Note: commits, as well as other git commands, can be ran in the WebStorm terminal, which can be found as a tab in the bottom of a project
       </p>
 
-      <h2>Making Branches</h2>
+      <h2 id="making_branch">Making Branches</h2>
       <p>
         To make a new branch, run a git bash terminal session (in WebStorm, click the terminal tab at the bottom) within a local repository. Next,
         run the command “git branch BRANCH_NAME” to create a new branch of BRANCH_NAME. Other useful commands include “git branch” to get a list of
         branches in the local repository and “git branch -d BRANCH_NAME” to delete a branch in the local repository.
       </p>
 
-      <h2>Merging Branches</h2>
+      <h2 id="merging_branch">Merging Branches</h2>
       <p>
         To merge a branch, run a git bash terminal session (in WebStorm, click the terminal tab at the bottom) within a local repository.
         Make sure you’re checked out onto the branch you want to merge INTO. Next, run the command “git merge BRANCH_NAME” to merge commits of BRANCH_NAME onto the currently checked out branch.
         Note: sometimes there’ll be merge conflicts, conflicting code between the two branches that needs to be changed. These can be solved within WebStorm and/or brought up within the terminal itself.
       </p>
 
-      <h2>Pull Requests and GitHub</h2>
+      <h2 id="pull_requests">Pull Requests</h2>
       <p>
         First, have changes to the branch you plan to pull request to done on some remote repository on GitHub.
         Next, click the “compare & pull request” button to send a pull request to the collaborators of the respective branch.
