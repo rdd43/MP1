@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Webstorm Tutorials</title>
+  <link href="doc/F_layout_skel.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div id="wrapper">
+  <header id="top">
+
+    <div id="logo">
+      <h1>Logo / Name</h1>
+    </div>
+
+    <div id="mainMenu">
+      <menu>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Webstorm and AFS</a></li>
+        <li><a href="#">Github</a></li>
+      </menu>
+    </div>
+
+    <div id="subMenu">
+      <menu>
+        <li><a href="#webstorm_afs">WebStorm to AFS Setup</a></li>
+        <li><a href="#webstorm_files">WebStorm Local File Creation</a></li>
+        <li><a href="#afs_files">AFS File Creation</a></li>
+        <li><a href="#html5_boilerplate">HTML5 Boilerplate and Deployment</a></li>
+        <li><a href="#afs_terminal">AFS and Terminal</a></li>
+      </menu>
+    </div>
+  </header>
+  <main id="mainArea">
+    <div id="content">
+
+      <h2 id="webstorm_afs">WebStorm to AFS Setup</h2>
+      <p>
+        To setup AFS auto-upload, click the menu item Tools > Deployment > Configuration. Next, click the plus icon at
+        the top left to add a new remote host and select SFTP. Enter in configuration information (Host, Username,
+        Authentication, Root Path, and Web Server URL). Under the “Mappings” tab, you can also set more specific paths
+        for deployment. After all that, all you have to do is select your remote host from the menu item Tools >
+        Deployment > Automatic Upload and any saved changes will be automatically uploaded onto the remote server.</p>
+
+      <h2 id="webstorm_files">WebStorm Local File Creation</h2>
+      <p>
+        To create files and folders in WebStorm, first you’ll need a project (this can be created by the menu item > New
+        > Project File). Right click the project folder or any folder within the project folder and click New, from
+        there select either “File” or any of the other preestablished file types based on the type of file you’d like to
+        create.
+
+      </p>
+
+      <h2 id="afs_files">AFS File Creation</h2>
+      <p>
+        To create a file via AFS, login and navigate to the respective folder using the terminal (refer to AFS and
+        Terminal below). Now all you have to do is run the command “mkdir DIRECTORY_NAME” replacing DIRECTORY_NAME with
+        the desired directory name if you want to create a directory in the given folder; or run the command “touch
+        FILENAME” replacing FILENAME with the desired file name (and file extension) to create a file.
+
+      </p>
+
+      <h2 id="html5_boilerplate">HTML5 Boilerplate and Deployment</h2>
+      <p>
+        First, download or clone a copy of the HTML5 Boilerplate. Also, make sure to have an installation of node.js on
+        your desktop. Next, run WebStorn with the copy of the HTML5 Boilerplate as the project folder. Then, run a
+        terminal session (clicking the terminal tab at the bottom) and run the command “npm install” to download
+        dependencies and generate a “node_modules” folder. Then, run the command “npm install -g gulp” to install gulp
+        within the project. Now any further work should be done within the “src” folder. After you’re done, you can run
+        the command “npm run build” to build the project and check the results under the “dist” folder. When deploying
+        your website, place the contents of the “dist” folder onto the web server (as it’s representative of the root
+        folder).
+
+      </p>
+
+      <h2 id="afs_terminal">AFS and Terminal</h2>
+      <p>
+        When accessing your site via AFS you are going to need to know what your domain is. Go to tools > deployment >
+        configuration. When in Configuration take note of the web server url. This url is going to be where your site is
+        hosted. You are also going to need to know the directory. To find the path, go to the same window via tools >
+        deployment > configuration and go to mapping. The mapping will show you where your file is hosted on the AFS.
+        Some useful linux commands to know are:
+        copy – cp SOURCE_FILE_PATH DESTINATION_FOLDER_PATH
+        Move – mv SOURCE_FILE_PATH DESTINATION_FOLDER_PATH
+        Rename – ren SOURCE_FILE_PATH NEW_FILENAME
+        These commands can be used, once logged into the terminal, to move and configure your directory.
+      </p>
+
+    </div>
+    <div id="sidebar">
+      <p>
+        <strong>Terminal:</strong> An interface to enter command line prompts.
+      </p>
+      <p>
+        <strong>Login:</strong> User authentication through username and password, allowing access to confidential
+        folders and files.
+      </p>
+      <p>
+        <strong>File:</strong> A storage of data and/or commands found in computers.
+      </p>
+      <p>
+        <strong>Folder / Directory :</strong> An organizational storage that can hold any number of files and/or
+        folders.
+      </p>
+      <p>
+        <strong>WebStorm:</strong>A powerful IDE for developing web-based applications.
+      </p>
+      <p>
+        <strong>Integrated Development Environment (IDE) :</strong> A software that streamlines and/or consolidates
+        tasks of coders, allowing for more efficient coding. Common features include improved formatting and easily
+        accessible version control.
+      </p>
+      <p>
+        <strong>HTML5 Boilerplate :</strong> A front-end template to expedite front-end development.</p>
+      <p>
+        <strong>Gulp:</strong> A set of build tools for consolidating common web development tasks.</p>
+      <p>
+        <strong>Andrew File System (AFS):</strong> A type of distributed network file system, allowing the remote access
+        of a server. </p>
+      <p>
+        <strong>Linux:</strong> An open source Unix-like operating system.</p>
+      <p>
+        <strong>Hyper Text Transfer Protocol (HTTP) :</strong> A common method of communication between clients and
+        servers.</p>
+      <p>
+        <strong>Web Browser :</strong> An application for accessing and viewing websites. They communicate with servers,
+        usually through HTTP, and are capable of rendering website code.</p>
+      <p>
+        <strong>Hypertext Markup Language (HTML):</strong> A frontend coding language that defines the “skeleton” of a
+        website through tags.</p>
+      <p>
+        <strong>Cascading Style Sheets (CSS) :</strong>A frontend coding language to stylize websites.</p>
+      <p>
+        <strong>File and Folder Naming Conventions :</strong>File and folder names can only be composed of letters,
+        numbers, spaces, underscores, and hyphens. On the web, it’s recommended to have all files with a given extension
+        in a corresponding folder. For example, have all CSS files in a CSS folder. Also, all image files should have a
+        folder as well.
+      </p>
+    </div>
+  </main>
+  <footer>
+    <small>&copy; Copyright 2020, Non-Existing</small>
+  </footer>
+</div>
+</body>
+</html>
