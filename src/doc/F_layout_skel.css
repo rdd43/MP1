@@ -36,6 +36,7 @@ menu {
 }
 #mainMenu {
   width: 692px;
+  height: 140px;
   padding-left: 27px;
   padding-right: 27px;
   float: left;
@@ -43,16 +44,26 @@ menu {
 }
 #mainMenu a {
   font-size: 160%;
-
 }
 #mainMenu li {
   padding-right: 20px;
-
+}
+#subMenu{
+  width: 1208px;
+  padding-right: 37px;
+  padding-left: 37px;
+  float: left;
+  text-align: left;
+}
+#subMenu a{
+  font-size: 140%;
+}
+#subMenu li{
+  padding-right: 20px;
 }
 #sidebar a {
   font-size: 140%;
 }
-
 #sidebar {
   width: 420px;
   padding-left: 21px;
@@ -64,19 +75,19 @@ menu {
 }
 #logo {
   width: 420px;
+  height: 140px;
   padding-left: 21px;
   padding-right: 21px;
   float: left;
-  height: 280px;
 }
 
 #top {
-    height: 285px;
-    line-height: 285px;
+  height: 285px;
+  line-height: 140px;
 }
 #logo img {
-  height: 280px;
-  width: 280px;
+  height: 140px;
+  width: 140px;
 }
 footer {
   clear: left;
