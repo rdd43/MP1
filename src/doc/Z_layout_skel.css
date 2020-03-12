@@ -29,7 +29,7 @@ menu {
   display: inline;
 }
 #content {
-  width: 692px;
+  width: 1208px;
   padding-left: 27px;
   padding-right: 27px;
   float: left;
@@ -49,16 +49,6 @@ menu {
   padding-right: 20px;
 
 }
-#sidebar a {
-  font-size: 140%;
-}
-
-#sidebar {
-  width: 420px;
-  padding-left: 21px;
-  padding-right: 21px;
-  float: left;
-}
 #mainArea {
   clear: both;
 }
@@ -71,11 +61,11 @@ menu {
 }
 
 #top {
-    height: 285px;
-    line-height: 285px;
+  height: 285px;
+  line-height: 285px;
 }
 #logo img {
-  height: 280px;
+  height: 285px;
   width: 280px;
 }
 footer {
@@ -84,4 +74,8 @@ footer {
 li.lastItem {
   padding-right: 0px;
   margin-right: 0px;
+}
+#showcase img{
+  height:461px;
+  width: 1208px;
 }
