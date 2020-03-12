@@ -1,41 +1,55 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link href="doc/Z_layout_skel.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+<div id="wrapper">
+  <header id="top">
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
-  <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+    <div id="logo">
+      <h1>MP1</h1>
+    </div>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <div id="mainMenu">
+      <menu>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Webstorm and AFS</a></li>
+        <li><a href="#">Github</a></li>
+      </menu>
+    </div>
+  </header>
+  <div id="mainArea">
+    <div id="content">
+      <h1>Major Project 1 IS117</h1>
+      <div id="showcase">
+        <img src="img/showcase.png">
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sapien purus, vestibulum quis molestie eget, maximus
+        sit amet lorem. Phasellus congue maximus dignissim. Mauris feugiat sed risus eu mattis. Proin eget ultricies
+        urna. In hac habitasse platea dictumst. Nullam rutrum convallis eros, posuere vestibulum justo iaculis eget. In
+        tortor orci, malesuada at quam placerat, scelerisque semper nisi. Praesent est lectus, blandit a arcu fermentum,
+        aliquet facilisis mauris.
+      </p>
+      <p>
+        Fusce tempus turpis eros, non sodales massa laoreet ut. Aliquam erat volutpat. Donec sit amet maximus lectus.
+        Maecenas convallis arcu tortor, vitae feugiat nulla tempus nec. Phasellus dapibus elit at massa ultrices
+        laoreet. In hac habitasse platea dictumst. Suspendisse sit amet sodales ante. Duis commodo mi feugiat, ultricies
+        massa at, volutpat eros. Pellentesque fringilla efficitur orci in porta. Mauris enim urna, ullamcorper a quam a,
+        tincidunt suscipit nibh. Curabitur eget augue augue. Sed mattis magna nec ullamcorper ullamcorper. In lobortis
+        mauris at neque viverra, quis suscipit dolor cursus. Maecenas massa arcu, faucibus eget iaculis in, ullamcorper
+        et erat. Quisque semper non turpis varius ullamcorper.
+      </p>
+    </div>
+  </div>
+
+</div>
+<footer>
+  <small>&copy; Copyright 2020, Non-Existing</small>
+</footer>
 </body>
-
 </html>
