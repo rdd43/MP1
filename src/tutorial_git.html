@@ -56,13 +56,13 @@
         Note: sometimes there’ll be merge conflicts, conflicting code between the two branches that needs to be changed. These can be solved within WebStorm and/or brought up within the terminal itself.
       </p>
 
-      <h2>Making Commits in WebStorm</h2>
+      <h2>Pull Requests and GitHub</h2>
       <p>
-        First, files must be added onto the “staging area” before file changes can be committed. To check whether any file changes aren’t part of the staging area,
-        run the command “git status” (this will of course disregard files in the gitignore file). In WebStorm, in order to add files and make a commit,
-        go the top menu > VCS > Git (here you’ll find other git command shortcuts). Clicking “Add” will add respective files onto the staging area; however,
-        “Commit File” will also give you the option to add any files to the staging area, followed by making the commit to the repository.
-        Note: commits, as well as other git commands, can be ran in the WebStorm terminal, which can be found as a tab in the bottom of a project
+        First, have changes to the branch you plan to pull request to done on some remote repository on GitHub.
+        Next, click the “compare & pull request” button to send a pull request to the collaborators of the respective branch.
+        Make sure to follow any guidelines setup for the repository you’re sending a pull request to, particularly writing comments as required.
+        Also, make sure there are no merge conflicts (or at the least, very little). After creating said pull request,
+        a collaborator will review the request, make any changes if needed, and accept the request, effectively pulling your branch changes onto their branch.
       </p>
 
     </div>
